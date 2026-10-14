@@ -3,7 +3,6 @@ import PhotosUI
 
 struct UploadView: View {
     @EnvironmentObject var postService: PostService
-    @EnvironmentObject var auth: AuthManager
     @Environment(\.dismiss) var dismiss
 
     @State private var selectedItem: PhotosPickerItem?
@@ -87,7 +86,7 @@ struct UploadView: View {
         isPosting = true
         Task {
             do {
-                try await postService.createPost(imageData: data, caption: caption, userId: auth.userId)
+                try await postService.createPost(imageData: data, caption: caption)
                 dismiss()
             } catch {
                 errorMessage = "Couldn't post. Check your connection and try again."

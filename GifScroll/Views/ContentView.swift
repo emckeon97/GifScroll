@@ -1,31 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var service = KlipyService()
+    @StateObject private var service = RedditService()
     @EnvironmentObject var likeManager: LikeManager
-    @EnvironmentObject var auth: AuthManager
-
-    /// Feed pages with ad slots (nil) interleaved on a repeating 5 / 10 pattern.
-    /// On macOS (Catalyst) there is no AdMob SDK, so no ad slots are inserted.
-    private var pages: [FeedItem?] {
-        #if canImport(GoogleMobileAds)
-        var result: [FeedItem?] = []
-        var sinceAd = 0
-        var patternIndex = 0
-        for item in service.items {
-            result.append(item)
-            sinceAd += 1
-            if sinceAd >= AdConfig.adPattern[patternIndex % AdConfig.adPattern.count] {
-                result.append(nil)
-                sinceAd = 0
-                patternIndex += 1
-            }
-        }
-        return result
-        #else
-        return service.items.map { Optional($0) }
-        #endif
-    }
 
     var body: some View {
         NavigationStack {
@@ -49,16 +26,10 @@ struct ContentView: View {
                     ScrollViewReader { proxy in
                         ScrollView(.vertical) {
                             LazyVStack(spacing: 0) {
-                                ForEach(pages.indices, id: \.self) { index in
-                                    if let item = pages[index] {
-                                        FeedItemView(item: item, likeManager: likeManager)
-                                            .containerRelativeFrame(.vertical)
-                                            .id(item.id)
-                                    } else {
-                                        AdPageView()
-                                            .containerRelativeFrame(.vertical)
-                                            .id("ad-\(index)")
-                                    }
+                                ForEach(service.items) { item in
+                                    FeedItemView(item: item, likeManager: likeManager)
+                                        .containerRelativeFrame(.vertical)
+                                        .id(item.id)
                                 }
                             }
                             .scrollTargetLayout()
@@ -75,21 +46,13 @@ struct ContentView: View {
                     }
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    GifScrollLogo(fontSize: 34)
-                }
-            }
+            .navigationTitle("GifScroll")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.black, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .onAppear {
                 service.likeManager = likeManager
                 service.memeFeed()
-                likeManager.refresh(userId: auth.userId, signedIn: auth.isSignedIn)
-            }
-            .onChange(of: auth.isSignedIn) { _, signedIn in
-                likeManager.refresh(userId: auth.userId, signedIn: signedIn)
             }
         }
     }

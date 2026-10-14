@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041E1855DE81532BA52A8297 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74388A3A2AD16A2BACC3C201 /* ReportView.swift */; };
 		045A9F16D7D3EA8E2524D3A2 /* GiphyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ABCC462A9546332BC9F817 /* GiphyService.swift */; };
+		0743FFAF7F87E2DCA36E65D1 /* Repost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */; };
 		0DCEA4EEE089CC1AAB41342A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC21124793A33FD99EC5024 /* ContentView.swift */; };
 		1ADA1F03CDC2DEBCE0693D00 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB04BDF4AC680B2DBB7F9F /* UploadView.swift */; };
 		1FC1B1D68467C6268C08C1C2 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE951495527FF36C0D371B02 /* Gif.swift */; };
@@ -17,28 +18,52 @@
 		43A9A6CEF87E39EE3D7D6E2F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0C4C7646BB50D4497873F /* Secrets.swift */; };
 		4474EBCF50B89BB3B509F3C2 /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBCBF4DCB76C106A12ADCB /* LikeManager.swift */; };
 		4E85A865309160B243A7B3F8 /* GifPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3C9C18EB00A94FD340752 /* GifPageView.swift */; };
-		05D8C3C5455EFFE6B598B5B2 /* GifScrollLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6546D7C7126086671ECB4D /* GifScrollLogo.swift */; };
-		EB7E829C31E648CC77C7883A /* GifScrollLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6546D7C7126086671ECB4D /* GifScrollLogo.swift */; };
 		55C5BCDFCE520A9E4C8526D2 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72802E5DC4C82D90F0B06640 /* SupabaseManager.swift */; };
 		6B85BC543F6CD3CD9785D800 /* GifScrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960768F0EDEB1D145DDACC1 /* GifScrollApp.swift */; };
 		78E54E25750E8D5C7973C731 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520CE6D069B2AD49E6C30E6 /* CommentsView.swift */; };
+		7B32AA9F3071D99F0061F15B /* GifScrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960768F0EDEB1D145DDACC1 /* GifScrollApp.swift */; };
+		7B32AAA03071D99F0061F15B /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE951495527FF36C0D371B02 /* Gif.swift */; };
+		7B32AAA13071D99F0061F15B /* GiphyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ABCC462A9546332BC9F817 /* GiphyService.swift */; };
+		7B32AAA23071D99F0061F15B /* AnimatedGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC42B5C69D2BCDCC39F7D16 /* AnimatedGifView.swift */; };
+		7B32AAA33071D99F0061F15B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC21124793A33FD99EC5024 /* ContentView.swift */; };
+		7B32AAA43071D99F0061F15B /* GifPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3C9C18EB00A94FD340752 /* GifPageView.swift */; };
+		7B32AAA53071D99F0061F15B /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBCBF4DCB76C106A12ADCB /* LikeManager.swift */; };
+		7B32AAA63071D99F0061F15B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6253A71611C8F3DC9F6E9A5F /* Post.swift */; };
+		7B32AAA73071D99F0061F15B /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B348CA1DABD0B94710646 /* PostService.swift */; };
+		7B32AAA83071D99F0061F15B /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB04BDF4AC680B2DBB7F9F /* UploadView.swift */; };
+		7B32AAA93071D99F0061F15B /* UserFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90108D6D7AADA254D67614A6 /* UserFeedView.swift */; };
+		7B32AAAA3071D99F0061F15B /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96502DFEB39D365CCEBD2D0 /* PostPageView.swift */; };
+		7B32AAAB3071D99F0061F15B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF58D56DF3FDDD7792CD508 /* MainTabView.swift */; };
+		7B32AAAC3071D99F0061F15B /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72802E5DC4C82D90F0B06640 /* SupabaseManager.swift */; };
+		7B32AAAD3071D99F0061F15B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEA806BBF8BF7718C1E504 /* Comment.swift */; };
+		7B32AAAE3071D99F0061F15B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72FA60E670AE2DA638C2F0B /* AuthManager.swift */; };
+		7B32AAAF3071D99F0061F15B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF452C034A4CAD06E2A20D /* AuthView.swift */; };
+		7B32AAB03071D99F0061F15B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6847047FB1CE462B7CD98A9F /* AccountView.swift */; };
+		7B32AAB13071D99F0061F15B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520CE6D069B2AD49E6C30E6 /* CommentsView.swift */; };
+		7B32AAB23071D99F0061F15B /* RedditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D18AE30718E06001408E5 /* RedditService.swift */; };
+		7B32AAB33071D99F0061F15B /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74388A3A2AD16A2BACC3C201 /* ReportView.swift */; };
+		7B32AAB43071D99F0061F15B /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0C4C7646BB50D4497873F /* Secrets.swift */; };
+		7B32AAB53071D99F0061F15B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D18B030718E0D001408E5 /* VideoPlayerView.swift */; };
+		7B32AAB63071D99F0061F15B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA35CE5D1ADEEAA6109627 /* ProfileView.swift */; };
+		7B32AAB73071D99F0061F15B /* RepostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */; };
+		7B32AAB83071D99F0061F15B /* Repost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */; };
+		7B32AAB93071D99F0061F15B /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */; };
+		7B32AABA3071D99F0061F15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDBAC21689581B04CB7ABB5 /* Assets.xcassets */; };
 		7B9D18AF30718E06001408E5 /* RedditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D18AE30718E06001408E5 /* RedditService.swift */; };
 		7B9D18B130718E0D001408E5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D18B030718E0D001408E5 /* VideoPlayerView.swift */; };
 		8A7A95538B2D7B66C892AF41 /* UserFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90108D6D7AADA254D67614A6 /* UserFeedView.swift */; };
 		93ED573C7D74BDC03207517E /* AnimatedGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC42B5C69D2BCDCC39F7D16 /* AnimatedGifView.swift */; };
 		9A3C5F8FFA5AF500A19B879D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF452C034A4CAD06E2A20D /* AuthView.swift */; };
+		9A5C1D4E3F6A7B82930415C6 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4B0C3D2E5F6A71829304B5 /* GoogleMobileAds */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A0879025EC5111B795EE6A5F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72FA60E670AE2DA638C2F0B /* AuthManager.swift */; };
 		A9604C929A9D23D69B3A6A4D /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B348CA1DABD0B94710646 /* PostService.swift */; };
+		BB7E3F6A5B8C9D04152637E8 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */; };
 		BCDD9ABF5D9576F68E961C18 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF58D56DF3FDDD7792CD508 /* MainTabView.swift */; };
 		BCDEA934D2501353B4C4CE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDBAC21689581B04CB7ABB5 /* Assets.xcassets */; };
 		C48318FADF80F394ACE51DA5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEA806BBF8BF7718C1E504 /* Comment.swift */; };
-		FC219D4D5190BC99B39CE5AA /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96502DFEB39D365CCEBD2D0 /* PostPageView.swift */; };
-		0743FFAF7F87E2DCA36E65D1 /* Repost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */; };
-		FFE9A60046D8020B76DA7E88 /* RepostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */; };
 		E389C33BF347E2E9216D874E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA35CE5D1ADEEAA6109627 /* ProfileView.swift */; };
-		BB7E3F6A5B8C9D04152637E8 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */; };
-		00A4F93C910FC3417F479AA1 /* KlipyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851AEB162A99E64AC4969753 /* KlipyService.swift */; };
-		9A5C1D4E3F6A7B82930415C6 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4B0C3D2E5F6A71829304B5 /* GoogleMobileAds */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC219D4D5190BC99B39CE5AA /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96502DFEB39D365CCEBD2D0 /* PostPageView.swift */; };
+		FFE9A60046D8020B76DA7E88 /* RepostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +72,9 @@
 		29E0C4C7646BB50D4497873F /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		36DB04BDF4AC680B2DBB7F9F /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		60A3C9C18EB00A94FD340752 /* GifPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPageView.swift; sourceTree = "<group>"; };
-		0A6546D7C7126086671ECB4D /* GifScrollLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifScrollLogo.swift; sourceTree = "<group>"; };
 		6253A71611C8F3DC9F6E9A5F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6847047FB1CE462B7CD98A9F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repost.swift; sourceTree = "<group>"; };
 		6EC21124793A33FD99EC5024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72802E5DC4C82D90F0B06640 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
 		74388A3A2AD16A2BACC3C201 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
@@ -57,9 +82,12 @@
 		7B9D18B030718E0D001408E5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		820301DA70B90E58F884DEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90108D6D7AADA254D67614A6 /* UserFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedView.swift; sourceTree = "<group>"; };
+		92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepostService.swift; sourceTree = "<group>"; };
 		9D107A8E6B8703D2B43D8307 /* GifScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF58D56DF3FDDD7792CD508 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		B5ABCC462A9546332BC9F817 /* GiphyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyService.swift; sourceTree = "<group>"; };
+		B7FA35CE5D1ADEEAA6109627 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BE951495527FF36C0D371B02 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		C1CEA806BBF8BF7718C1E504 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		C96502DFEB39D365CCEBD2D0 /* PostPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageView.swift; sourceTree = "<group>"; };
@@ -68,30 +96,24 @@
 		D94B348CA1DABD0B94710646 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		E72FA60E670AE2DA638C2F0B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		EECBCBF4DCB76C106A12ADCB /* LikeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeManager.swift; sourceTree = "<group>"; };
-		F960768F0EDEB1D145DDACC1 /* GifScrollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifScrollApp.swift; sourceTree = "<group>"; };
 		F86432ED7BF70F908D92B572 /* GifScrollMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifScrollMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F960768F0EDEB1D145DDACC1 /* GifScrollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifScrollApp.swift; sourceTree = "<group>"; };
 		FEC42B5C69D2BCDCC39F7D16 /* AnimatedGifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGifView.swift; sourceTree = "<group>"; };
-		6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repost.swift; sourceTree = "<group>"; };
-		92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepostService.swift; sourceTree = "<group>"; };
-		B7FA35CE5D1ADEEAA6109627 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
-		851AEB162A99E64AC4969753 /* KlipyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		98897BCEECAD3F1F06B65648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF5BDB0BEAFE176F9629192A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A5C1D4E3F6A7B82930415C6 /* GoogleMobileAds in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98897BCEECAD3F1F06B65648 /* FrameworksBuildPhase */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +135,6 @@
 				FEC42B5C69D2BCDCC39F7D16 /* AnimatedGifView.swift */,
 				6EC21124793A33FD99EC5024 /* ContentView.swift */,
 				60A3C9C18EB00A94FD340752 /* GifPageView.swift */,
-				0A6546D7C7126086671ECB4D /* GifScrollLogo.swift */,
 				36DB04BDF4AC680B2DBB7F9F /* UploadView.swift */,
 				90108D6D7AADA254D67614A6 /* UserFeedView.swift */,
 				C96502DFEB39D365CCEBD2D0 /* PostPageView.swift */,
@@ -124,7 +145,7 @@
 				74388A3A2AD16A2BACC3C201 /* ReportView.swift */,
 				7B9D18B030718E0D001408E5 /* VideoPlayerView.swift */,
 				B7FA35CE5D1ADEEAA6109627 /* ProfileView.swift */,
-				AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */
+				AA6D2E5F4B7B8C93041526D7 /* AdBannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,7 +156,7 @@
 				BE951495527FF36C0D371B02 /* Gif.swift */,
 				6253A71611C8F3DC9F6E9A5F /* Post.swift */,
 				C1CEA806BBF8BF7718C1E504 /* Comment.swift */,
-				6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */
+				6A4B8F9BE5E2E3E5BDB6DEA0 /* Repost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,7 +171,6 @@
 				E72FA60E670AE2DA638C2F0B /* AuthManager.swift */,
 				7B9D18AE30718E06001408E5 /* RedditService.swift */,
 				92EB5BEA4AD000EF0B811BB7 /* RepostService.swift */,
-				851AEB162A99E64AC4969753 /* KlipyService.swift */
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -255,11 +275,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2A0CC8C51422BA19AF3A7E9 /* ResourcesBuildPhase */ = {
+		C2A0CC8C51422BA19AF3A7E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDEA934D2501353B4C4CE9F /* Assets.xcassets in Resources */,
+				7B32AABA3071D99F0061F15B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +296,6 @@
 				93ED573C7D74BDC03207517E /* AnimatedGifView.swift in Sources */,
 				0DCEA4EEE089CC1AAB41342A /* ContentView.swift in Sources */,
 				4E85A865309160B243A7B3F8 /* GifPageView.swift in Sources */,
-				05D8C3C5455EFFE6B598B5B2 /* GifScrollLogo.swift in Sources */,
 				4474EBCF50B89BB3B509F3C2 /* LikeManager.swift in Sources */,
 				337282ACC70AF977A90661DE /* Post.swift in Sources */,
 				A9604C929A9D23D69B3A6A4D /* PostService.swift in Sources */,
@@ -298,43 +317,40 @@
 				FFE9A60046D8020B76DA7E88 /* RepostService.swift in Sources */,
 				0743FFAF7F87E2DCA36E65D1 /* Repost.swift in Sources */,
 				BB7E3F6A5B8C9D04152637E8 /* AdBannerView.swift in Sources */,
-				00A4F93C910FC3417F479AA1 /* KlipyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71B418CF44983A0A2653C33F /* SourcesBuildPhase */ = {
+		71B418CF44983A0A2653C33F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B85BC543F6CD3CD9785D800 /* GifScrollApp.swift in Sources */,
-				1FC1B1D68467C6268C08C1C2 /* Gif.swift in Sources */,
-				045A9F16D7D3EA8E2524D3A2 /* GiphyService.swift in Sources */,
-				93ED573C7D74BDC03207517E /* AnimatedGifView.swift in Sources */,
-				0DCEA4EEE089CC1AAB41342A /* ContentView.swift in Sources */,
-				4E85A865309160B243A7B3F8 /* GifPageView.swift in Sources */,
-				EB7E829C31E648CC77C7883A /* GifScrollLogo.swift in Sources */,
-				4474EBCF50B89BB3B509F3C2 /* LikeManager.swift in Sources */,
-				337282ACC70AF977A90661DE /* Post.swift in Sources */,
-				A9604C929A9D23D69B3A6A4D /* PostService.swift in Sources */,
-				1ADA1F03CDC2DEBCE0693D00 /* UploadView.swift in Sources */,
-				8A7A95538B2D7B66C892AF41 /* UserFeedView.swift in Sources */,
-				FC219D4D5190BC99B39CE5AA /* PostPageView.swift in Sources */,
-				BCDD9ABF5D9576F68E961C18 /* MainTabView.swift in Sources */,
-				55C5BCDFCE520A9E4C8526D2 /* SupabaseManager.swift in Sources */,
-				C48318FADF80F394ACE51DA5 /* Comment.swift in Sources */,
-				A0879025EC5111B795EE6A5F /* AuthManager.swift in Sources */,
-				9A3C5F8FFA5AF500A19B879D /* AuthView.swift in Sources */,
-				2E8D896CF14CFA591FB4767E /* AccountView.swift in Sources */,
-				78E54E25750E8D5C7973C731 /* CommentsView.swift in Sources */,
-				7B9D18AF30718E06001408E5 /* RedditService.swift in Sources */,
-				041E1855DE81532BA52A8297 /* ReportView.swift in Sources */,
-				43A9A6CEF87E39EE3D7D6E2F /* Secrets.swift in Sources */,
-				7B9D18B130718E0D001408E5 /* VideoPlayerView.swift in Sources */,
-				E389C33BF347E2E9216D874E /* ProfileView.swift in Sources */,
-				FFE9A60046D8020B76DA7E88 /* RepostService.swift in Sources */,
-				0743FFAF7F87E2DCA36E65D1 /* Repost.swift in Sources */,
-				BB7E3F6A5B8C9D04152637E8 /* AdBannerView.swift in Sources */,
-				00A4F93C910FC3417F479AA1 /* KlipyService.swift in Sources */,
+				7B32AA9F3071D99F0061F15B /* GifScrollApp.swift in Sources */,
+				7B32AAA03071D99F0061F15B /* Gif.swift in Sources */,
+				7B32AAA13071D99F0061F15B /* GiphyService.swift in Sources */,
+				7B32AAA23071D99F0061F15B /* AnimatedGifView.swift in Sources */,
+				7B32AAA33071D99F0061F15B /* ContentView.swift in Sources */,
+				7B32AAA43071D99F0061F15B /* GifPageView.swift in Sources */,
+				7B32AAA53071D99F0061F15B /* LikeManager.swift in Sources */,
+				7B32AAA63071D99F0061F15B /* Post.swift in Sources */,
+				7B32AAA73071D99F0061F15B /* PostService.swift in Sources */,
+				7B32AAA83071D99F0061F15B /* UploadView.swift in Sources */,
+				7B32AAA93071D99F0061F15B /* UserFeedView.swift in Sources */,
+				7B32AAAA3071D99F0061F15B /* PostPageView.swift in Sources */,
+				7B32AAAB3071D99F0061F15B /* MainTabView.swift in Sources */,
+				7B32AAAC3071D99F0061F15B /* SupabaseManager.swift in Sources */,
+				7B32AAAD3071D99F0061F15B /* Comment.swift in Sources */,
+				7B32AAAE3071D99F0061F15B /* AuthManager.swift in Sources */,
+				7B32AAAF3071D99F0061F15B /* AuthView.swift in Sources */,
+				7B32AAB03071D99F0061F15B /* AccountView.swift in Sources */,
+				7B32AAB13071D99F0061F15B /* CommentsView.swift in Sources */,
+				7B32AAB23071D99F0061F15B /* RedditService.swift in Sources */,
+				7B32AAB33071D99F0061F15B /* ReportView.swift in Sources */,
+				7B32AAB43071D99F0061F15B /* Secrets.swift in Sources */,
+				7B32AAB53071D99F0061F15B /* VideoPlayerView.swift in Sources */,
+				7B32AAB63071D99F0061F15B /* ProfileView.swift in Sources */,
+				7B32AAB73071D99F0061F15B /* RepostService.swift in Sources */,
+				7B32AAB83071D99F0061F15B /* Repost.swift in Sources */,
+				7B32AAB93071D99F0061F15B /* AdBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +402,41 @@
 			};
 			name = Release;
 		};
+		4A9ABD8669FDF463D6340781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RZ8U8SFTCC;
+				GCC_DYNAMIC_NO_COMMON = YES;
+				INFOPLIST_FILE = GifScroll/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emckeon97.GifScroll.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9586E89FBE346731A8FAC1E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RZ8U8SFTCC;
 				GCC_DYNAMIC_NO_COMMON = YES;
 				INFOPLIST_FILE = GifScroll/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -431,7 +482,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RZ8U8SFTCC;
 				GCC_DYNAMIC_NO_COMMON = YES;
 				INFOPLIST_FILE = GifScroll/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,10 +557,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RZ8U8SFTCC;
 				GCC_DYNAMIC_NO_COMMON = YES;
 				INFOPLIST_FILE = GifScroll/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,59 +585,8 @@
 			};
 			name = Debug;
 		};
-		4A9ABD8669FDF463D6340781 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				GCC_DYNAMIC_NO_COMMON = YES;
-				INFOPLIST_FILE = GifScroll/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emckeon97.GifScroll.mac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		7F3A9B2C1D4E5F60718293A4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-/* Begin XCSwiftPackageProductDependency section */
-		8F4B0C3D2E5F6A71829304B5 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F3A9B2C1D4E5F60718293A4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
-		};
-/* End XCSwiftPackageProductDependency section */
 /* Begin XCConfigurationList section */
 		3D29D9F3A882C4202964FB56 /* Build configuration list for PBXProject "GifScroll" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F3A9B2C1D4E5F60718293A4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F4B0C3D2E5F6A71829304B5 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F3A9B2C1D4E5F60718293A4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
 }
