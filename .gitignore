@@ -1,3 +1,6 @@
 # Xcode
 *.xcuserdata/
 DerivedData/
+
+# Android secrets (API keys)
+**/Secrets.kt
